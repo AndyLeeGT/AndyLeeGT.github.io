@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on andy lee blog</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on andy lee blog</description>
+    <title>Tags on andy lee blog testing</title>
+    <link>https://AndyLeeGT.github.io/tags/</link>
+    <description>Recent content in Tags on andy lee blog testing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://AndyLeeGT.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beach</title>
-      <link>http://localhost:1313/tags/beach/</link>
+      <link>https://AndyLeeGT.github.io/tags/beach/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/beach/</guid>
+      <guid>https://AndyLeeGT.github.io/tags/beach/</guid>
       <description></description>
     </item>
     <item>
       <title>Interest</title>
-      <link>http://localhost:1313/tags/interest/</link>
+      <link>https://AndyLeeGT.github.io/tags/interest/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/interest/</guid>
+      <guid>https://AndyLeeGT.github.io/tags/interest/</guid>
       <description></description>
     </item>
     <item>
       <title>Math</title>
-      <link>http://localhost:1313/tags/math/</link>
+      <link>https://AndyLeeGT.github.io/tags/math/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/math/</guid>
+      <guid>https://AndyLeeGT.github.io/tags/math/</guid>
       <description></description>
     </item>
     <item>
       <title>Nothing</title>
-      <link>http://localhost:1313/tags/nothing/</link>
+      <link>https://AndyLeeGT.github.io/tags/nothing/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nothing/</guid>
+      <guid>https://AndyLeeGT.github.io/tags/nothing/</guid>
       <description></description>
     </item>
     <item>
       <title>Riddles</title>
-      <link>http://localhost:1313/tags/riddles/</link>
+      <link>https://AndyLeeGT.github.io/tags/riddles/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/riddles/</guid>
+      <guid>https://AndyLeeGT.github.io/tags/riddles/</guid>
       <description></description>
     </item>
     <item>
       <title>Verbatim</title>
-      <link>http://localhost:1313/tags/verbatim/</link>
+      <link>https://AndyLeeGT.github.io/tags/verbatim/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/verbatim/</guid>
+      <guid>https://AndyLeeGT.github.io/tags/verbatim/</guid>
       <description></description>
     </item>
   </channel>

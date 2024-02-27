@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>andy lee blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on andy lee blog</description>
+    <title>andy lee blog testing</title>
+    <link>https://AndyLeeGT.github.io/</link>
+    <description>Recent content on andy lee blog testing</description>
     
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://AndyLeeGT.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
