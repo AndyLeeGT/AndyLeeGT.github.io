@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on andy lee blog</title>
-    <link>https://andyleeblog.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on andy lee blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://andyleeblog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Metaphorsum</title>
-      <link>https://andyleeblog.github.io/categories/metaphorsum/</link>
+      <link>http://localhost:1313/categories/metaphorsum/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://andyleeblog.github.io/categories/metaphorsum/</guid>
+      <guid>http://localhost:1313/categories/metaphorsum/</guid>
       <description></description>
     </item>
     <item>
       <title>Post</title>
-      <link>https://andyleeblog.github.io/categories/post/</link>
+      <link>http://localhost:1313/categories/post/</link>
       <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>https://andyleeblog.github.io/categories/post/</guid>
+      <guid>http://localhost:1313/categories/post/</guid>
       <description></description>
     </item>
   </channel>
