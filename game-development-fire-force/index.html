@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Game Development: Fire Force - Welcome to Andy Blog</title>
+<meta property="og:title" content="Game Development: Fire Force - Welcome to Andy Blog">
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="img/georgia.jpg">
+
+<meta property="og:url" content="https://AndyLeeGT.github.io/game-development-fire-force/"><meta property="og:description" content="The homepage of Andy Lee IT blog.">
+<meta name="Description" property="description" content="The homepage of Andy Lee IT blog.">
+
+
+<meta property="keywords" content ="unity, particle system">
+
+
+
+<link rel="stylesheet" href="https://AndyLeeGT.github.io/css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://AndyLeeGT.github.io/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<meta name="theme-color" content="#ffffff">
+
+
+<script>function updateMode(){localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}function toggleMode(){localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()}window.onload=updateMode();function toggleMenu(){let e=document.getElementById("navbar-default");e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")}</script>
+
+  </head>
+  <body>
+    <header class="md:px-0 px-2">
+        <nav >
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="nav-main my-2.5">
+      <a href="https://AndyLeeGT.github.io/" class="nav-title py-2.5 text-2xl
+               text-zinc-600 dark:text-zinc-300 hover:border-b-0">Welcome to Andy Blog</a>
+    </div>
+    <button type="button"
+            onclick="toggleMenu()"
+            class="inline-flex items-center p-2 ml-3
+                  text-sm text-gray-500
+                  rounded-lg md:hidden hover:bg-gray-100
+                  focus:outline-none focus:ring-2
+                  focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1
+                           0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="grid md:grid-flow-col items-center justify-between text-lg
+                 my-2.5 grid-cols-1 pl-0 text-center">
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/post/">Posts</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/categories/">Categories</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/tags/">Tags</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/about/">About Me</a>
+        </li>
+        
+        <li class="h-7 pl-2.5 pr-0 list-none">
+          <button type="button" onclick="toggleMode()" class="h-full"  aria-label="Toggle between dark and light mode">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
+                 id="ligh-mode-button-img"
+                 alt="A sun icon for switching to light mode"
+                 src="https://AndyLeeGT.github.io/img/light_mode.svg">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
+                 id="dark-mode-button-img"
+                 alt="A moon icon for switching to dark mode"
+                 src="https://AndyLeeGT.github.io/img/dark_mode.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    </header>
+    <main class="content h-card container mt-2 m-auto
+                 leading-loose md:px-0 px-2 z-0"
+          role="main">
+    
+<article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+        <h1 class="article-title p-name" itemprop="name">Game Development: Fire Force</h1>
+        
+        <div class="flex justify-between items-center">
+            
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="https://AndyLeeGT.github.io/game-development-fire-force/">
+                <time itemprop="datePublished" class="dt-published"
+                    datetime="2023-12-22T00:00:00Z"
+                    content="2023-12-22T00:00:00Z">
+                    2023.12.22
+                </time>
+            </a>
+            
+            
+                
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="https://AndyLeeGT.github.io/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Andy Lee</span></a>
+                
+            
+        </div>
+        
+    </div>
+
+    <div class="article-content e-content" itemprop="articleBody">
+        <h1 id="introduction">introduction</h1>
+<p>Hey there, visitors! Get ready to feel the heat because I&rsquo;m about to introduce you to a game that&rsquo;s set to turn up the temperature in the world of gaming: &ldquo;Fire Force&rdquo;!</p>
+<p>In this blog post, I&rsquo;m diving headfirst into the fiery world of &ldquo;Fire Force.&rdquo;</p>
+<p>From its inception to its release, I&rsquo;m here to give you an exclusive behind-the-scenes look at what makes &ldquo;Fire Force&rdquo; tick. So, buckle up and get ready to join us on this epic journey through the flames as we explore every aspect of this scorching hot game.</p>
+<h1 id="graphics-and-art-style">Graphics and Art Style</h1>
+<p>For our game&rsquo;s graphics, I sourced all our assets from the <code>Unity Asset Store</code>.</p>
+<p>Additionally, the artwork in the game was created using <code>Dolle</code>, an AI-powered art creation tool.</p>
+<p>Since my focus when developing the game was to acquire skills for the Unity Engine, all the art and graphics were obtained from <code>external resources</code>.</p>
+<p>So when you&rsquo;re exploring our game, it&rsquo;s all thanks to the Unity Asset Store and Dolle&rsquo;s remarkable art</p>
+<h1 id="level-design-and-environments">Level Design and Environments</h1>
+<p>In <code>Level 1</code>, players are introduced to the basics of firefighting as they navigate through a relatively <code>straightforward environment</code>. They&rsquo;ll encounter manageable fires to extinguish, simple obstacles to overcome, and a few civilians to rescue. This initial level serves as a tutorial, allowing players to familiarize themselves with the game mechanics and controls.</p>
+<p>Once players have mastered the fundamentals, they&rsquo;ll advance to Level 2, where the real challenges begin. Here, they&rsquo;ll find themselves facing more intense fires, more obstacles, and a greater number of civilians in need of rescue. The environment becomes more complex, with narrow corridors, collapsing structures, and hidden pathways adding to the difficulty.</p>
+<p><strong>Level 1 Design</strong>
+<img src="/img/game-ff/level1.PNG" alt="alt"></p>
+<p>In <code>Level 2</code>, players must rely on their skills and quick thinking to effectively manage limited resources and navigate through increasingly dangerous situations. It&rsquo;s a test of their firefighting prowess and problem-solving abilities, pushing them to their limits as they strive to save lives and extinguish raging infernos.</p>
+<p>With each level presenting new challenges and obstacles, players will need to adapt their strategies and approach, ensuring that every firefight is tackled with precision and efficiency. Level 2 serves as a thrilling escalation in difficulty, providing a rewarding experience for players who are up for the challenge.</p>
+<p><strong>Level 2 Design</strong>
+<img src="/img/game-ff/level2.PNG" alt="alt"></p>
+<h1 id="system-and-technology">System and Technology</h1>
+<p><strong>Door fracturing Technology</strong></p>
+<p>to make it more realistic, we&rsquo;ve implemented a <code>door fracture system</code> that activates when players attempt to break doors to extinguish fires or rescue citizens.
+To achieve this, I&rsquo;ve implemented a method to render individual door pieces and subsequently create rigid bodies for each fragment.</p>
+<p><strong>Creating individual door fragment a rigid body</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>  <span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">Main</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#999;font-style:italic">//Create rigid body borders for all 3D door pixels.  
+</span></span></span><span style="display:flex;"><span><span style="color:#999;font-style:italic"></span>        <span style="color:#6ab825;font-weight:bold">if</span>(once == <span style="color:#24909d">true</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#6ab825;font-weight:bold">for</span>(<span style="color:#6ab825;font-weight:bold">int</span> x = <span style="color:#3677a9">0</span>; x &lt;  doorPerPixel; x++)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#6ab825;font-weight:bold">for</span> (<span style="color:#6ab825;font-weight:bold">int</span> y = <span style="color:#3677a9">0</span>; y &lt; doorPerPixel; y++)
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#6ab825;font-weight:bold">for</span>(<span style="color:#6ab825;font-weight:bold">int</span> z = <span style="color:#3677a9">0</span>; z &lt; doorPerPixel; z++)
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        CreateCube(<span style="color:#6ab825;font-weight:bold">new</span> Vector3(x, y, z));
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#6ab825;font-weight:bold">void</span> <span style="color:#447fcf">CreateCube</span>(Vector3 coordinates)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+</span></span><span style="display:flex;"><span>        Renderer rd = cube.GetComponent&lt;Renderer&gt;();
+</span></span><span style="display:flex;"><span>        rd.material = GetComponent&lt;Renderer&gt;().material;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        cube.transform.localScale = transform.localScale / doorPerPixel;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        Vector3 firstCube = transform.position - transform.localScale / <span style="color:#3677a9">2</span> + cube.transform.localScale / <span style="color:#3677a9">2</span>;
+</span></span><span style="display:flex;"><span>        cube.transform.position = firstCube + Vector3.Scale(coordinates, cube.transform.localScale);
+</span></span><span style="display:flex;"><span>        Rigidbody rb = cube.AddComponent&lt;Rigidbody&gt;();
+</span></span><span style="display:flex;"><span>       
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Door Mesh
+<img src="/img/game-ff/doorfracture.PNG" alt="alt">
+Door fragments
+<img src="/img/game-ff/door_parts.PNG" alt="alt">
+Breaking the Door
+<img src="/img/game-ff/door_broken.PNG" alt="alt"></p>
+<p><strong>Particle System</strong></p>
+<p>In our game, we&rsquo;ve implemented the power of particle systems to bring elements like fire and water to life in stunning detail.
+With dynamic particle effects, the flickering flames of a raging inferno dance realistically, immersing players in the heat of the moment.
+Meanwhile, cascading water droplets sparkle and splash, creating a sense of fluidity and motion that&rsquo;s truly mesmerizing.
+Whether you&rsquo;re battling flames or dousing fires, the particle systems in our game add a whole new level of realism and excitement to the experience.
+Get ready to be blown away by the immersive effects of fire and water like never before!</p>
+<p><img src="/img/game-ff/fire.PNG" alt="alt"></p>
+<h1 id="gameplay-and-controls">Gameplay and Controls</h1>
+<p><strong>How To Play</strong></p>
+<p>Overall, our game employs standard 3D game controls that are intuitive and easy to grasp. Here&rsquo;s a breakdown of how to navigate through the fiery challenges of &ldquo;Fire Force&rdquo;:</p>
+<p><strong>Character Movement: WASD Keys</strong></p>
+<pre tabindex="0"><code>W: Move Forward
+S: Move Backward
+A: Rotate Left
+D: Rotate Right
+Water Spray Movement: Arrow Keys on the keyboard
+</code></pre><p>Use the arrow keys to direct the flow of your water spray. Each arrow key corresponds to a different direction, allowing you to precisely target flames and control the spread of fire.</p>
+<p><strong>Water Hose On and Off: T Key</strong></p>
+<p>Toggle the T key to activate or deactivate your water hose. This conserves water usage, as your water supply is limited and requires refilling once depleted.</p>
+<p><strong>Weapon System: Tab Key</strong></p>
+<p>In &ldquo;Fire Force,&rdquo; you have access to a various tools, including a water hose and an axe.
+Press the Tab key to switch between the water hose and the axe, depending on the situation at hand.
+Utilize the water hose to douse flames and prevent further destruction.
+Switch to the axe when faced with obstacles such as locked doors, allowing you to break through and progress.</p>
+<p><strong>X-Ray System: C Key</strong></p>
+<p>Gain a tactical advantage with the C key, which activates the X-ray system.
+By pressing C, you can peer through walls, providing invaluable insights into the layout of each level and the locations of trapped civilians.</p>
+<p><strong>Rescue/Heal: H Key</strong></p>
+<p>Every firefighter knows that saving lives is paramount. Press the H key to initiate rescue and healing operations.
+Upon approaching injured civilians, use the H key to administer aid. Once healed, civilians will autonomously navigate their way out of the building using <code>AI navmesh</code> technology, ensuring their safe escape from harm&rsquo;s way.</p>
+<pre tabindex="0"><code>With these controls, you&#39;re ready to take on the infernos of &#34;Fire Force&#34;. 
+So, gear up, stay vigilant, and let&#39;s extinguish those flames together!
+</code></pre><h1 id="personal-reflections">Personal Reflections</h1>
+<p>Reflecting on my journey developing this game has been an incredible learning experience on multiple fronts.
+Firstly, exploring <code>particle systems</code> has been eye-opening.
+Witnessing how these effects can breathe life into elements like fire and water has been nothing short of mesmerizing.
+Learning to manipulate particle systems to create dynamic and realistic visuals has expanded my understanding of game development immensely.</p>
+<p>Secondly, diving into the <code>Unity Game Engine</code> has been both challenging and rewarding.
+Exploring its vast <code>array of components</code>, from <code>physics systems</code> to <code>audio management</code>, has provided me with a comprehensive understanding of how to bring a game to life.
+Navigating <code>Unity's interface</code> and learning to leverage its features efficiently has been a valuable skill set that I&rsquo;ll carry forward in future projects.</p>
+<p>The implementation of the <code>Door Fracture System</code> was a particularly intriguing aspect of development.
+Crafting a system that simulates the breaking and fracturing of doors added a layer of realism and immersion to the gameplay experience.
+It was a fascinating challenge to design and implement the mechanics behind this system, and seeing it come to life in the game was incredibly satisfying.</p>
+<p><code>Character movement and animation</code> were also key areas of focus during development.
+Learning to program fluid and responsive character movement was essential for creating an engaging gameplay experience.
+Additionally, mastering character animation techniques helped to breathe life into the game world, making the characters feel more dynamic and lifelike.</p>
+<p>Overall, this journey has been filled with moments of discovery, challenge, and growth.
+Each aspect of development, from particle systems to character animation, has provided valuable insights and expanded my skill set as a game developer.
+I look forward to applying these newfound skills and knowledge to future projects, continuing to push the boundaries of what&rsquo;s possible in game development.</p>
+<p><img src="/img/game-ff/intro.PNG" alt="alt"></p>
+<h2 id="game-download">Game Download</h2>
+<p>Ready to start playing? Click the link below to clone the repository and begin your exciting adventure!
+Explore new worlds, extinguish fires, and become a hero. Your journey begins now! Download here:</p>
+<blockquote>
+<p><a href="https://github.com/AndyLeeGT/FireForce">https://github.com/AndyLeeGT/FireForce</a></p>
+</blockquote>
+
+    </div>
+
+    
+<ul class="list-none pl-0 font-sm align-left">
+
+<hr>
+<li class="list-none">
+    Categories:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/categories/post">
+    <span class="tag-item dark:bg-zinc-900 dark:hover:bg-zinc-700
+                 hover:bg-zinc-200 bg-zinc-100
+                 dark:border-zinc-600 py-0.5
+                 px-1 rounded-t border-b-2 border-zinc-300
+                 hover:border-zinc-500">
+    Post
+    </span>
+</a>
+</li >
+
+
+<li class="list-none">
+    Tags:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/unity">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://AndyLeeGT.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            Unity
+        </span>
+    </a>
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/particle-system">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://AndyLeeGT.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            Particle System
+        </span>
+    </a>
+    
+</li>
+
+</ul>
+
+
+    
+
+    
+    <div class="text-neutral-500 mb-4">
+        Last modified <span itemprop="dateModified"
+                            datetime="2023-12-22T00:00:00Z"
+                            content="2023-12-22T00:00:00Z">
+        2023.12.22
+        </span>
+    </div>
+    
+</article>
+
+    </main>
+    <footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
+    
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© Andy Lee 2024</span>
+    </li>
+  </ul>
+</footer>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+  </body>
+</html>
