@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://AndyLeeGT.github.io/categories/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Active Directory: Roles and Features</title>
-      <link>https://AndyLeeGT.github.io/active-directory-roles-and-features/</link>
+      <title>Active Directory: Group and ShareFolder</title>
+      <link>https://AndyLeeGT.github.io/active-directory-group-and-sharefolder/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://AndyLeeGT.github.io/active-directory-roles-and-features/</guid>
-      <description>will be added!</description>
+      <guid>https://AndyLeeGT.github.io/active-directory-group-and-sharefolder/</guid>
+      <description>Welcome back to the post again! In this post, we will talk about creating and adding group members, and explore the shared folder features.&#xA;Adding New Group One powerful method for organizing the users is by incorporating Group Organizational Units (OUs). These OUs offer a structured approach to managing groups within your network, providing enhanced organization and control over permissions and policies.&#xA;To get started, follow these steps below:&#xA;Access Active Directory Users and Computers: Launch the Active Directory Users and Computers (ADUC) console.</description>
     </item>
     <item>
       <title>Active Directory: Configuration and Set up</title>

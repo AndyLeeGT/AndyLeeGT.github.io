@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Active Directory: Roles and Features - Welcome to Andy Blog</title>
-<meta property="og:title" content="Active Directory: Roles and Features - Welcome to Andy Blog">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Active Directory: Group and ShareFolder - Welcome to Andy Blog</title>
+<meta property="og:title" content="Active Directory: Group and ShareFolder - Welcome to Andy Blog">
 <meta property="og:type" content="article">
 
 
 <meta property="og:image" content="img/georgia.jpg">
 
-<meta property="og:url" content="http://localhost:1313/active-directory-roles-and-features/"><meta property="og:description" content="The homepage of Andy Lee IT blog.">
+<meta property="og:url" content="https://AndyLeeGT.github.io/active-directory-group-and-sharefolder/"><meta property="og:description" content="The homepage of Andy Lee IT blog.">
 <meta name="Description" property="description" content="The homepage of Andy Lee IT blog.">
 
 
@@ -17,14 +17,14 @@
 
 
 
-<link rel="stylesheet" href="http://localhost:1313/css/style.min.css">
+<link rel="stylesheet" href="https://AndyLeeGT.github.io/css/style.min.css">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<link href="http://localhost:1313/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<link href="https://AndyLeeGT.github.io/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
 <meta name="theme-color" content="#ffffff">
 
 
@@ -36,7 +36,7 @@
         <nav >
   <div class="container flex flex-wrap justify-between items-center mx-auto">
     <div class="nav-main my-2.5">
-      <a href="http://localhost:1313/" class="nav-title py-2.5 text-2xl
+      <a href="https://AndyLeeGT.github.io/" class="nav-title py-2.5 text-2xl
                text-zinc-600 dark:text-zinc-300 hover:border-b-0">Welcome to Andy Blog</a>
     </div>
     <button type="button"
@@ -87,11 +87,11 @@
             <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
                  id="ligh-mode-button-img"
                  alt="A sun icon for switching to light mode"
-                 src="http://localhost:1313/img/light_mode.svg">
+                 src="https://AndyLeeGT.github.io/img/light_mode.svg">
             <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
                  id="dark-mode-button-img"
                  alt="A moon icon for switching to dark mode"
-                 src="http://localhost:1313/img/dark_mode.svg">
+                 src="https://AndyLeeGT.github.io/img/dark_mode.svg">
           </button>
         </li>
       </ul>
@@ -107,11 +107,11 @@
     
 <article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="title-container">
-        <h1 class="article-title p-name" itemprop="name">Active Directory: Roles and Features</h1>
+        <h1 class="article-title p-name" itemprop="name">Active Directory: Group and ShareFolder</h1>
         
         <div class="flex justify-between items-center">
             
-            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="http://localhost:1313/active-directory-roles-and-features/">
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="https://AndyLeeGT.github.io/active-directory-group-and-sharefolder/">
                 <time itemprop="datePublished" class="dt-published"
                     datetime="2024-03-01T00:00:00Z"
                     content="2024-03-01T00:00:00Z">
@@ -121,7 +121,7 @@
             
             
                 
-                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="http://localhost:1313/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Andy Lee</span></a>
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="https://AndyLeeGT.github.io/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Andy Lee</span></a>
                 
             
         </div>
@@ -167,6 +167,47 @@ These OUs offer a structured approach to managing groups within your network, pr
 </li>
 </ol>
 <p>By leveraging Group OUs in Active Directory, you can simplify group management, improve security, and ensure better organization within your network environment. Take the time to plan your OU structure carefully, considering factors such as departmental divisions, security boundaries, and administrative responsibilities.</p>
+<h1 id="sharefolder">ShareFolder</h1>
+<p>Setting up shared folders in Windows Active Directory is essential for efficient file management and collaboration within a networked environment. administrator can add shareFolder functionality within domain network so that user can create shared folders that allow users to access, share, and collaborate on files. In this blog post, we&rsquo;ll walk through the process of creating shared folders in Windows Active Directory.</p>
+<ol>
+<li>
+<p>Accessing Active Directory Management Console: Launch the ADUC console.T his can be found in the Administrative Tools section of your Windows Server or under the Tools bar in server manager application.</p>
+</li>
+<li>
+<p>Navigating to the Desired Organizational Unit (OU): In the Active Directory Management Console, expand the domain node to view the organizational units (OUs) within your domain.Navigate to the OU where you want to create the shared folder by clicking on it to select it.</p>
+</li>
+<li>
+<p>Creating a New Shared Folder: Right-click on the selected OU will open up context menu. From the context menu, choose &ldquo;New&rdquo; and then select &ldquo;Shared Folder&rdquo;. Enter the name for your shared folder in the &ldquo;Name&rdquo; field. Optionally, you can specify the path for the shared folder permissions in the &ldquo;Permission Level&rdquo; field.Click &ldquo;OK&rdquo; to create the shared folder.</p>
+<ol>
+<li>IMAGE: <code>Sharefolder property window</code>
+<img src="/img/homeLab/RoleAndFeature/ShareFolder.PNG" alt="alt"></li>
+</ol>
+</li>
+<li>
+<p>Setting Permissions for the Shared Folder: It is essential to set up permission levels when configuring the shared folder. You will have two options: Read and Read/Write. These are straightforward steps but are highly important as they are related to the security properties.</p>
+<ol>
+<li>IMAGE: <code>Sharefolder permission setup</code>
+<img src="/img/homeLab/RoleAndFeature/ShareFolderToDomainUser.PNG" alt="alt"></li>
+</ol>
+</li>
+<li>
+<p>Accessing the Shared Folder: Once the shared folder is created and permissions are set, users can access it from their computers.
+Users can navigate to the shared folder by entering its network path in File Explorer (e.g., \servername\sharedfolder). In our example, the path is <code>\\DC\SharedFolder</code></p>
+<ol>
+<li>
+<p>IMAGE: <code>finishing up the Share Folder setup</code>
+<img src="/img/homeLab/RoleAndFeature/SharedFolderFinish.PNG" alt="alt"></p>
+</li>
+<li>
+<p>IMAGE: <code>ShareFolder Access</code>
+<img src="/img/homeLab/RoleAndFeature/ShareFolderinDC.PNG" alt="alt"></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>Creating shared folders in Windows Active Directory is a straightforward process that enhances collaboration and file management within a networked environment.
+you can create shared folders with ease, empowering users to access and share files with window server 2019
+Incorporate shared folders into your Active Directory infrastructure to streamline workflow and enhance productivity across your organization.</p>
 
     </div>
 
@@ -202,7 +243,7 @@ These OUs offer a structured approach to managing groups within your network, pr
                      px-1 rounded-t border-b-2 border-zinc-300
                      hover:border-zinc-500">
             
-            <img class="h-4 mr-2 inline" src="http://localhost:1313/images/tag_logo.svg"
+            <img class="h-4 mr-2 inline" src="https://AndyLeeGT.github.io/images/tag_logo.svg"
                  alt="Logo of a tag: indicates that a tag item follows.">
             Active Directory
         </span>
@@ -217,7 +258,7 @@ These OUs offer a structured approach to managing groups within your network, pr
                      px-1 rounded-t border-b-2 border-zinc-300
                      hover:border-zinc-500">
             
-            <img class="h-4 mr-2 inline" src="http://localhost:1313/images/tag_logo.svg"
+            <img class="h-4 mr-2 inline" src="https://AndyLeeGT.github.io/images/tag_logo.svg"
                  alt="Logo of a tag: indicates that a tag item follows.">
             Users and Computers
         </span>
