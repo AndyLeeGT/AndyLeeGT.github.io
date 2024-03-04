@@ -16,6 +16,13 @@
       <description>Introduction Thank you for visiting my blog once again. In this post, we will discuss the setup of Active Directory, DHCP configuration, and account setup. It&amp;rsquo;s important to note that this setup drew significant inspiration from Josh Madakor&amp;rsquo;s HomeLab tutorial, which you can find at using belwo link:&#xA;&amp;ldquo;https://www.youtube.com/watch?v=MHsI8hJmggI&amp;amp;t=1904s&amp;quot;.&#xA;laboratory Network Setup Let&amp;rsquo;s start by exploring the HomeLab setup. Our HomeLab utilizes Oracle VM VirtualBox to host virtual machines, including Windows 10 for client-side computers and Server 2019 for server hosting.</description>
     </item>
     <item>
+      <title>Active Directory: Roles and Features</title>
+      <link>https://AndyLeeGT.github.io/active-directory-roles-and-features/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://AndyLeeGT.github.io/active-directory-roles-and-features/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Game Development: Fire Force</title>
       <link>https://AndyLeeGT.github.io/game-development-fire-force/</link>
       <pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate>
