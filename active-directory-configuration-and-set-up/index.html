@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1"><title>Active Directory: Configuration and Set up - Welcome to Andy Blog</title>
+<meta property="og:title" content="Active Directory: Configuration and Set up - Welcome to Andy Blog">
+<meta property="og:type" content="article">
+
+
+<meta property="og:image" content="img/georgia.jpg">
+
+<meta property="og:url" content="https://AndyLeeGT.github.io/active-directory-configuration-and-set-up/"><meta property="og:description" content="The homepage of Andy Lee IT blog.">
+<meta name="Description" property="description" content="The homepage of Andy Lee IT blog.">
+
+
+<meta property="keywords" content ="active directory, users and computers">
+
+
+
+<link rel="stylesheet" href="https://AndyLeeGT.github.io/css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link href="https://AndyLeeGT.github.io/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed" />
+<meta name="theme-color" content="#ffffff">
+
+
+<script>function updateMode(){localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")}function toggleMode(){localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()}window.onload=updateMode();function toggleMenu(){let e=document.getElementById("navbar-default");e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")}</script>
+
+  </head>
+  <body>
+    <header class="md:px-0 px-2">
+        <nav >
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <div class="nav-main my-2.5">
+      <a href="https://AndyLeeGT.github.io/" class="nav-title py-2.5 text-2xl
+               text-zinc-600 dark:text-zinc-300 hover:border-b-0">Welcome to Andy Blog</a>
+    </div>
+    <button type="button"
+            onclick="toggleMenu()"
+            class="inline-flex items-center p-2 ml-3
+                  text-sm text-gray-500
+                  rounded-lg md:hidden hover:bg-gray-100
+                  focus:outline-none focus:ring-2
+                  focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
+             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1
+                           0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0
+                           01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="grid md:grid-flow-col items-center justify-between text-lg
+                 my-2.5 grid-cols-1 pl-0 text-center">
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/post/">Posts</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/categories/">Categories</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/tags/">Tags</a>
+        </li>
+        
+        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+          <a class="text-zinc-600 dark:text-zinc-300
+                    hover:border-b-0" href="/about/">About Me</a>
+        </li>
+        
+        <li class="h-7 pl-2.5 pr-0 list-none">
+          <button type="button" onclick="toggleMode()" class="h-full"  aria-label="Toggle between dark and light mode">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline"
+                 id="ligh-mode-button-img"
+                 alt="A sun icon for switching to light mode"
+                 src="https://AndyLeeGT.github.io/img/light_mode.svg">
+            <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden"
+                 id="dark-mode-button-img"
+                 alt="A moon icon for switching to dark mode"
+                 src="https://AndyLeeGT.github.io/img/dark_mode.svg">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    </header>
+    <main class="content h-card container mt-2 m-auto
+                 leading-loose md:px-0 px-2 z-0"
+          role="main">
+    
+<article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+        <h1 class="article-title p-name" itemprop="name">Active Directory: Configuration and Set up</h1>
+        
+        <div class="flex justify-between items-center">
+            
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="https://AndyLeeGT.github.io/active-directory-configuration-and-set-up/">
+                <time itemprop="datePublished" class="dt-published"
+                    datetime="2024-02-29T00:00:00Z"
+                    content="2024-02-29T00:00:00Z">
+                    2024.02.29
+                </time>
+            </a>
+            
+            
+                
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="https://AndyLeeGT.github.io/" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Andy Lee</span></a>
+                
+            
+        </div>
+        
+    </div>
+
+    <div class="article-content e-content" itemprop="articleBody">
+        <h1 id="introduction">Introduction</h1>
+<p>Thank you for visiting my blog once again. In this post, we will discuss the setup of Active Directory, DHCP configuration, and account setup. It&rsquo;s important to note that this setup drew significant inspiration from Josh Madakor&rsquo;s HomeLab tutorial, which you can find at using belwo link:</p>
+<blockquote>
+<p>&ldquo;<a href="https://www.youtube.com/watch?v=MHsI8hJmggI&amp;t=1904s%22">https://www.youtube.com/watch?v=MHsI8hJmggI&amp;t=1904s&quot;</a>.</p>
+</blockquote>
+<h1 id="laboratory-network-setup">laboratory Network Setup</h1>
+<p>Let&rsquo;s start by exploring the HomeLab setup. Our HomeLab utilizes Oracle VM VirtualBox to host virtual machines, including Windows 10 for client-side computers and Server 2019 for server hosting.</p>
+<p>Within the Windows Server 2019 OS, we&rsquo;ve implemented a <code>Domain Controller (DC)</code> with dual <code>Network Interface Card (NIC)</code> adapters, utilizing <code>DHCP</code> for dynamic IP configuration.</p>
+<p><img src="/img/homeLab/configurationSetup/window10.PNG" alt="alt"></p>
+<p>To enhance security, we&rsquo;ve segregated the network into internal and external segments, with the internal network incorporating additional security features.</p>
+<p>Regarding the internal network configuration for the server OS, we&rsquo;ve configured one NIC with a <code>static IP address of 172.16.0.1</code>, <code>subnet mask of 255.255.255.0</code>, and <code>DNS of 127.0.0.1</code>.</p>
+<p>Additionally, the external network (internet-facing) employs <code>DHCP with a range of 172.16.0.100 to 172.16.0.200</code>, <code>subnet mask of 255.255.255.0</code>, <code>gateway of 172.168.0.1</code>, and <code>DNS pointing to 172.16.0.1</code>.</p>
+<p>For the Active Directory installation, a domain with the <code>Fully Qualified Domain Name (FQDN)</code> of <code>mydomain.com</code> has been created.</p>
+<p><strong>The images below represent the overall structure for our HomeLab setup and Virtual Machine setup</strong></p>
+<ol>
+<li>HomeLab structure Diagram
+<img src="/img/homeLab/configurationSetup/ADsetup.drawio.PNG" alt="alt"></li>
+<li>Virtual Machine Setup
+<img src="/img/homeLab/configurationSetup/setup.PNG" alt="alt"></li>
+<li>DNS setup
+<img src="/img/homeLab/configurationSetup/DNSSetup.PNG" alt="alt"></li>
+<li>DHCP setup
+<img src="/img/homeLab/configurationSetup/DHCPSetup.PNG" alt="alt"></li>
+</ol>
+<h1 id="account-and-group-setup">Account and Group Setup</h1>
+<p>For the account setup, we utilized pre-built Organizational Units (OUs): one for users and another for administrators. For security purposes, the admin OU is exclusively managed by me. The images below provide examples of the user accounts and permissions.</p>
+<ol>
+<li>User account OU setup
+<img src="/img/homeLab/configurationSetup/accountSetup.PNG" alt="alt"></li>
+<li>Admin account setup
+<img src="/img/homeLab/configurationSetup/adminAccountSetUp.PNG" alt="alt"></li>
+</ol>
+<h1 id="computer-setup">Computer Setup</h1>
+<p>Currently, we have one computer connected via the internal network within the domain. We&rsquo;ll be expanding our network as needed in the future if necessary.</p>
+<ol>
+<li>User account OU setup
+<img src="/img/homeLab/configurationSetup/computerSetup.PNG" alt="alt"></li>
+</ol>
+<p><strong>Thank you for taking the time to visit my post. I hope you found the information valuable and insightful. Stay tuned for more updates and articles on Active Directory Post. Until next time, take care!</strong></p>
+
+    </div>
+
+    
+<ul class="list-none pl-0 font-sm align-left">
+
+<hr>
+<li class="list-none">
+    Categories:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/categories/post">
+    <span class="tag-item dark:bg-zinc-900 dark:hover:bg-zinc-700
+                 hover:bg-zinc-200 bg-zinc-100
+                 dark:border-zinc-600 py-0.5
+                 px-1 rounded-t border-b-2 border-zinc-300
+                 hover:border-zinc-500">
+    Post
+    </span>
+</a>
+</li >
+
+
+<li class="list-none">
+    Tags:
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/active-directory">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://AndyLeeGT.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            Active Directory
+        </span>
+    </a>
+    
+    <a class="inline-block mt-2 mr-2 border-none text-neutral-800 dark:text-neutral-200"
+       href="/tags/users-and-computers">
+        <span class="flex flex-row justify-start items-center
+                     dark:bg-zinc-900 dark:hover:bg-zinc-700
+                     hover:bg-zinc-300 bg-zinc-200
+                     dark:border-zinc-600 py-0.5
+                     px-1 rounded-t border-b-2 border-zinc-300
+                     hover:border-zinc-500">
+            
+            <img class="h-4 mr-2 inline" src="https://AndyLeeGT.github.io/images/tag_logo.svg"
+                 alt="Logo of a tag: indicates that a tag item follows.">
+            Users and Computers
+        </span>
+    </a>
+    
+</li>
+
+</ul>
+
+
+    
+
+    
+    <div class="text-neutral-500 mb-4">
+        Last modified <span itemprop="dateModified"
+                            datetime="2024-02-29T00:00:00Z"
+                            content="2024-02-29T00:00:00Z">
+        2024.02.29
+        </span>
+    </div>
+    
+</article>
+
+    </main>
+    <footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
+    
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© Andy Lee 2024</span>
+    </li>
+  </ul>
+</footer>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+  </body>
+</html>
